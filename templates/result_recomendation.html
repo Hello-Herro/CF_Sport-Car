@@ -36,7 +36,9 @@
     <link rel="stylesoeet" href="static/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
     <!-- <link rel="stylesheet" type="text/css" href="static/css/styles.css"> -->
-
+    
+    <!-- CSS -->
+    <link rel="stylesoeet" href="../static/css/hasil.css" />
   </head>
   <body>
      <!-- banner bg main start -->
@@ -73,16 +75,19 @@
           </div>
         </div>
         <!-- logo section end -->
-    <div class="hasil">
-        {{ car_name }}
-        {% if recommendations %}
-        {% for recommendation in recommendations %}
-            <li>{{ recommendation }}</li>
-            {% endfor %}
+        <div class="hasil">
+          <p>{{ car_name }}</p>
+          <ul>
+            {% if recommendations %}
+              {% for recommendation in recommendations %}
+                <li>{{ recommendation }}</li>
+              {% endfor %}
             {% else %}
-            <li>No recommendations available</li>
+              <li>No recommendations available</li>
             {% endif %}
-        </div>    
+          </ul>
+        </div>
+        
   </body>
   <footer>
   <div class="footer_section layout_padding">

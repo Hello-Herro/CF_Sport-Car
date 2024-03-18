@@ -1,0 +1,20 @@
+.hasil {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hasil p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hasil ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hasil ul li {
+  margin-bottom: 5px;
+}
